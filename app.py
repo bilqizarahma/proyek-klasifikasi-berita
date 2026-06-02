@@ -47,6 +47,11 @@ def clean_text(text):
 def index():
     return render_template('index.html')
 
+# Rute Halaman About Us
+@app.route('/about')
+def about():
+    return render_template('about_us.html')
+
 # 5. Rute Proses Prediksi
 @app.route('/predict', methods=['POST'])
 def predict():

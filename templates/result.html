@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <!-- Wrapper utama untuk memastikan konten di tengah layar -->
-    <div class="wrapper" style="width: 90%; max-width: 600px; display: flex; flex-direction: column; align-items: center;">
+    {% include 'components/navbar.html' %}
+    <div class="wrapper-container">
+        <!-- Wrapper utama untuk memastikan konten di tengah layar -->
+        <div class="wrapper" style="width: 90%; max-width: 600px; display: flex; flex-direction: column; align-items: center;">
         
         <div class="glass-card" style="padding: 40px; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 20px;">
             
@@ -37,6 +39,7 @@
         <footer style="margin-top: 25px; text-align: center; color: var(--text-muted); font-size: 0.8rem; opacity: 0.8;">
             &copy; 2026 Text Mining | Project Klasifikasi Berita
         </footer>
+    </div>
     </div>
 </body>
 </html>

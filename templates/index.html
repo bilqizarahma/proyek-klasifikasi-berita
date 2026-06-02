@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="wrapper" style="width: 95%; max-width: 1100px; display: flex; flex-direction: column; gap: 20px;">
+    {% include 'components/navbar.html' %}
+    <div class="wrapper-container">
+        <div class="wrapper" style="width: 95%; max-width: 1100px; display: flex; flex-direction: column; gap: 20px;">
         
         <!-- HEADER -->
         <header style="text-align: center; padding: 10px 0;">
@@ -66,6 +68,7 @@
             </p>
         </div>
 
+    </div>
     </div>
 
     <style>
